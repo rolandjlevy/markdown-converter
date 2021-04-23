@@ -1,6 +1,6 @@
 # Markdown Converter
 
-Using the `Marked` compiler to convert markdown to HTML
+Using the `marked` compiler to convert markdown to HTML
 
 Unlike HTML, markdown is easy and not overly bloated. The design goal for Markdown's formatting syntax is to make it as readable as possible. A Markdown-formatted document should be publishable as-is, as plain text, without any tags or formatting instructions
 
@@ -13,7 +13,9 @@ Unlike HTML, markdown is easy and not overly bloated. The design goal for Markdo
 -  [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [The marked compiler](https://github.com/markedjs/marked)
 
-### Just 7 lines of JavaScript
+### The code
+
+- Acheived with the `Marked` compiler and just 6 lines of JavaScript:
 ```js
 const $ = (el) => document.querySelector(el);
 const chatWindow = $('#html-output > .content');
