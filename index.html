@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="style.css" rel="stylesheet" />
+    <title>repl.it</title>
+    
+  <body>
+
+    <main class="main-wrapper">
+
+      <section class="m-t-20">
+        <header>
+          <h3>MARKDOWN CONVERTER</h3>
+        </header>
+      </section>
+
+      <section class="container">
+        <fieldset id="markdown-input">
+          <legend>Markdown input</legend>
+          <textarea placeholder="Enter markdown..."></textarea>
+        </fieldset>
+
+        <fieldset id="html-output">
+          <legend>HTML output</legend>
+          <!-- <textarea></textarea> -->
+          <div class="content"></textarea>
+        </fieldset>
+
+      </section>
+
+      <section class="m-t-20">
+        <p>Unlike HTML, markdown is easy and not overly bloated. The design goal for Markdown's formatting syntax is to make it as readable as possible. A Markdown-formatted document should be publishable as-is, as plain text, without any tags or formatting instructions.</p>
+      </section>
+
+      <section class="m-t-20">
+        <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">Markdown cheatsheet</a> | <a href="https://github.com/markedjs/marked" target="_blank">The marked compiler</a> 
+      </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
