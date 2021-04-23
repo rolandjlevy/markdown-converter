@@ -1,30 +1,25 @@
-# Learning
+# Markdown Converter
 
-- web sockets [chat-app-with-socket-io](https://replit.com/@RolandJLevy/chat-app-with-socket-io)
-- strapi.io
-- React [reactboilerplate](https://www.reactboilerplate.com/)
-- TypeScript
-- GraphQl
-- MongoDb
-- Jamstack
-- bcrypt
-- Deno
+Using the `Marked` compiler to convert markdown to HTML
 
-# Ideas
+Unlike HTML, markdown is easy and not overly bloated. The design goal for Markdown's formatting syntax is to make it as readable as possible. A Markdown-formatted document should be publishable as-is, as plain text, without any tags or formatting instructions
 
-- Create a Node repl to convert this README into HTML using [marked](https://www.npmjs.com/package/marked)
+### Links 🔗
+- [Live demo](https://markdown-converter.rolandjlevy.repl.co/)
+- [View source code](https://replit.com/@RolandJLevy/markdown-converter)
+- [Github repo](https://github.com/rolandjlevy/markdown-converter)
 
+### Reference
+-  [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [The marked compiler](https://github.com/markedjs/marked)
+
+### Just 7 lines of JavaScript
 ```js
-app.get('/test', function(req, res) {
-  var path = __dirname + '/markdown/test.md';
-  fs.readFile(path, 'utf8', function(err, data) {
-    if(err) {
-      console.log(err);
-    }
-    res.send(marked(data.toString()));
-  });
+const $ = (el) => document.querySelector(el);
+const chatWindow = $('#html-output > .content');
+
+$('#markdown-input > textarea').addEventListener('keyup', (e) => {
+  chatWindow.innerHTML = marked(e.target.value);
+  chatWindow.scrollTop = chatWindow.scrollHeight;
 });
 ```
-
-- Create a text to speech app, following [this project](https://dev.to/dailydevtips1/vanilla-javascript-speech-to-text-4l35)
-- Make something that uploads and manipulates images with filter, [like this](https://repl.it/talk/share/Image-Filter/86886) 
