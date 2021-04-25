@@ -14,9 +14,8 @@ Unlike HTML, markdown is easy and not overly bloated. The design goal for Markdo
 - [The marked compiler](https://github.com/markedjs/marked)
 
 ### The code
-
 - Acheived with the `Marked` compiler and just 6 lines of JavaScript:
-```js
+```javascript
 const $ = (el) => document.querySelector(el);
 const chatWindow = $('#html-output > .content');
 
